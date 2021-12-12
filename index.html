@@ -61,7 +61,7 @@
           <h1 class="main-header">
             Эффeктивные решения<br />для вашего бизнеса
           </h1>
-          <button class="main-button button" type="button">
+          <button class="main-button button" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -127,25 +127,34 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="ocupation-pics-block">
             <li>
+              <div class="ocupation-pics-unit">
               <img
                 src="./images/index/boxone.jpg"
                 alt="working process"
                 width="370"
               />
+              <p>Десктопные приложения</p>
+            </div>
             </li>
             <li>
+              <div class="ocupation-pics-unit">
               <img
                 src="./images/index/boxtwo.jpg"
                 alt="working process"
                 width="370"
               />
+              <p>Мобильные приложения</p>
+            </div>
             </li>
             <li>
+              <div class="ocupation-pics-unit">
               <img
                 src="./images/index/boxthree.jpg"
                 alt="working process"
                 width="370"
               />
+              <p>Дизайнерские решения</p>
+            </div>
             </li>
           </ul>
         </div>
@@ -444,5 +453,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-backdrop" data-modal-close>Close</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
