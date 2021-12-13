@@ -102,6 +102,9 @@ header {
   color: var(--title-txt-color);
   text-decoration: none;
   padding: 32px 0px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-unit a:hover,
 .nav-unit a:focus {
@@ -119,6 +122,9 @@ header .contact {
   color: var(--primary-txt-color);
   text-decoration: none;
   fill: var(--primary-txt-color);
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail,
 .tel {
@@ -195,6 +201,10 @@ header .contact {
   border: none;
   border-radius: 4px;
   background-color: var(--button-bg-color);
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-button.button {
@@ -351,6 +361,10 @@ header .contact {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hot-links-unit a:hover,
 .hot-links-unit a:focus {
@@ -383,6 +397,10 @@ header .contact {
   border: 1px solid var(--icon-main-color);
   border-radius: 4px;
   fill: var(--icon-main-color);
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .constant-clients-companies:hover,
 .constant-clients-companies:focus {
@@ -420,6 +438,9 @@ address {
 }
 address .map-mark {
   color: var(--primary-white-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 address .map-mark:hover,
 address .map-mark:focus,
@@ -429,6 +450,9 @@ address .contact:focus {
 }
 address .contact {
   color: var(--footer-secondary-color);
+  transition-property:color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-join {
@@ -548,6 +572,7 @@ address .contact {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
 
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
